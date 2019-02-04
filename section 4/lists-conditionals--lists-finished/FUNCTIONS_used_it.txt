@@ -1,0 +1,17 @@
+
+splice
+slice(), without arguments makes a copyof the original array;
+Optionaly use sread oparator;
+const person = [...this.state.data]
+
+function splice to remove one element from the arrary.
+
+persons.splice(personIndex, 1);
+
+deletePersonHandler = (personIndex) => {
+    // const persons = this.state.persons.slice();
+    const persons = [...this.state.persons];
+    persons.splice(personIndex, 1);
+    this.setState({persons: persons});
+  }
+
